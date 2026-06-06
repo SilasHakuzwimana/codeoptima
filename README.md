@@ -168,8 +168,22 @@ Rust WASM
 Fastify
 Prisma
 
-## 📧 Contact
-Twitter: @codeoptima/@SHakuzwimana
-Discord: Join our server
-Email: support@codeoptima.com | hakusilas@@gmail.com
-Phone number: +250 783 749 019
+## 📧 Contact & Support
+
+<div align="center">
+
+### 💬 Get in Touch
+
+| Platform | Contact |
+|----------|---------|
+| **🐦 Twitter** | [@codeoptima](https://twitter.com/codeoptima) / [@SHakuzwimana](https://twitter.com/SHakuzwimana) |
+| **💬 Discord** | [Join our community](https://discord.gg/codeoptima) |
+| **📧 Email** | [support@codeoptima.com](mailto:support@codeoptima.com) / [hakusilas@gmail.com](mailto:hakusilas@gmail.com) |
+| **📞 Phone** | [+250 783 749 019](tel:+250783749019) |
+
+</div>
+
+---
+
+**Office Hours:** Monday - Friday, 9 AM - 6 PM (CAT)  
+**Response Time:** Within 24 hours
