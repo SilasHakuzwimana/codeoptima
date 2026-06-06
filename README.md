@@ -174,8 +174,7 @@ Fastify
 Prisma
 
 ## 📧 Contact
-Twitter: @codeoptima/@
-
+Twitter: @codeoptima/@SHakuzwimana
 Discord: Join our server
-
-Email: support@codeoptima.com
+Email: support@codeoptima.com | hakusilas@@gmail.com
+Phone number: +250 783 749 019
