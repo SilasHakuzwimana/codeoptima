@@ -1,0 +1,69 @@
+codeoptima/
+├── pnpm-workspace.yaml          # Workspace definition
+├── package.json                 # Root package
+├── .npmrc                       # PNPM configuration
+├── turbo.json                   # TurboRepo for build pipeline
+│
+├── packages/
+│   ├── extension/               # VS Code extension (main)
+│   │   ├── package.json
+│   │   └── src/
+│   │
+│   ├── core-wasm/               # Rust/WASM analysis engine
+│   │   ├── package.json
+│   │   ├── Cargo.toml
+│   │   └── src/
+│   │
+│   ├── language-python/         # Python analyzer
+│   │   ├── package.json
+│   │   └── src/
+│   │
+│   ├── language-java/           # Java analyzer
+│   │   ├── package.json
+│   │   └── src/
+│   │
+│   ├── webview-ui/              # React dashboard
+│   │   ├── package.json
+│   │   └── src/
+│   │
+│   └── shared-types/            # TypeScript types across packages
+│       ├── package.json
+│       └── src/
+│
+├── backend/
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   └── src/
+│
+└── simulator/
+    ├── package.json
+    ├── docker/
+    └── src/
+
+
+# Basic commands
+pnpm install                 # Install all dependencies
+pnpm add <pkg>              # Add to root
+pnpm --filter <pkg> add <dep>  # Add to specific package
+pnpm remove <pkg>           # Remove from workspace
+pnpm update                 # Update all dependencies
+
+# Development
+pnpm dev                    # Run all in dev mode (turbo)
+pnpm --filter extension dev # Run just extension
+pnpm --filter backend dev   # Run just backend
+pnpm exec <command>         # Run command in workspace context
+
+# Building
+pnpm build                  # Build all packages
+pnpm --filter wasm build    # Build specific package
+pnpm --filter webview-ui build
+
+# Testing
+pnpm test                   # Run all tests
+pnpm --filter extension test
+pnpm test -- --watch        # Watch mode
+
+# Publishing
+pnpm --filter extension package  # Create VSIX
+pnpm --filter extension publish  # Publish to marketplace

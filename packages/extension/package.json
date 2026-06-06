@@ -1,0 +1,55 @@
+{
+  "name": "codeoptima-extension",
+  "displayName": "CodeOptima",
+  "version": "1.0.0",
+  "publisher": "codeoptima",
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=18"
+  },
+  "categories": ["Programming Languages", "Debuggers", "Testing"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeoptima.analyze",
+        "title": "CodeOptima: Analyze Performance"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm run build:watch",
+    "build": "tsup src/extension.ts --format cjs --external vscode --minify --sourcemap",
+    "build:watch": "tsup src/extension.ts --format cjs --external vscode --sourcemap --watch",
+    "package": "pnpm run build && vsce package --no-dependencies",
+    "test": "vitest run",
+    "lint": "eslint src --ext ts"
+  },
+  "dependencies": {
+    "codeoptima-core-wasm": "workspace:*",
+    "codeoptima-shared-types": "workspace:*",
+    "vscode-languageclient": "9.0.1",
+    "fast-deep-equal": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/vscode": "1.85.0",
+    "tsup": "^8.0.1",
+    "vitest": "^1.1.0",
+    "@vscode/vsce": "^2.22.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "vscode-languageclient@*": "*"
+      }
+    },
+    "packageExtensions": {
+      "vscode-languageclient": {
+        "peerDependencies": {
+          "vscode": "*"
+        }
+      }
+    }
+  }
+}

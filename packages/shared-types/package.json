@@ -1,0 +1,19 @@
+{
+  "name": "codeoptima-shared-types",
+  "version": "1.0.0",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,33 @@
+# .github/workflows/ci.yml
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build all packages
+        run: pnpm build
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Package extension
+        run: pnpm extension:package

@@ -1,0 +1,16 @@
+// patches/vscode-languageclient+9.0.1.patch
+// PNPM supports automatic patching of dependencies
+diff --git a/node_modules/vscode-languageclient/lib/common/client.js b/node_modules/vscode-languageclient/lib/common/client.js
+--- a/node_modules/vscode-languageclient/lib/common/client.js
++++ b/node_modules/vscode-languageclient/lib/common/client.js
+@@ -1234,6 +1234,10 @@
+     }
+     handleDiagnostics(params) {
+         if (!this.diagnosticCollection) {
++            // CodeOptima patch: Lazy initialize diagnostic collection
++            this.diagnosticCollection = this._client.createDiagnosticCollection('codeoptima');
++        }
++        if (!this.diagnosticCollection) {
+             return;
+         }
+         this.diagnosticCollection.set(params.uri, this._asDiagnostics(params.diagnostics));

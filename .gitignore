@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# Build outputs
+dist/
+build/
+out/
+*.vsix
+*.wasm
+pkg/
+
+# Rust
+target/
+Cargo.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.log
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+temp/
+*.temp
+
+# Secrets
+*.pem
+*.key
+*.crt
