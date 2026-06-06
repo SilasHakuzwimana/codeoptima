@@ -70,7 +70,9 @@ def find_duplicates(items):
         else:
             seen.add(item)
     return list(duplicates)  # O(n) instead of O(n²)
-📊 Performance Impact
+
+## 📊 Performance Impact
+
 Operation	Before	After	Improvement
 10,000 items nested loop	5.2s	0.03s	173x faster
 Memory usage	450MB	12MB	37x less
