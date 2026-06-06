@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/license-MIT%20with%20Commons%20Clause-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/codeoptima/codeoptima/actions)
-[![GitHub stars](https://img.shields.io/github/stars/codeoptima/codeoptima.svg?style=social)](https://github.com/codeoptima/codeoptima/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/SilasHakuzwimana/codeoptima?style=for-the-badge&logo=github&logoColor=white&label=⭐%20Stars&color=yellow)](https://github.com/SilasHakuzwimana/codeoptima/stargazers)
 
 </div>
 ---
