@@ -1,49 +1,44 @@
-# 🚀 CodeOptima
+### CodeOptima
 
 <div align="center">
 
-![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/codeoptima.codeoptima)
-![VS Code Downloads](https://img.shields.io/visual-studio-marketplace/d/codeoptima.codeoptima)
-![License](https://img.shields.io/github/license/codeoptima/codeoptima)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-
-**Real-time performance intelligence for VS Code**
-
-[Install Extension](https://marketplace.visualstudio.com/items?itemName=codeoptima.codeoptima) •
-[Documentation](https://docs.codeoptima.com) •
-[Report Bug](https://github.com/codeoptima/codeoptima/issues) •
-[Request Feature](https://github.com/codeoptima/codeoptima/discussions)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/codeoptima/codeoptima/releases)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-1.85%2B-brightgreen.svg)](https://marketplace.visualstudio.com/items?itemName=codeoptima.codeoptima)
+[![Installs](https://img.shields.io/badge/installs-1.2k-blue.svg)](https://marketplace.visualstudio.com/items?itemName=codeoptima.codeoptima)
+[![License](https://img.shields.io/badge/license-MIT%20with%20Commons%20Clause-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/codeoptima/codeoptima/actions)
+[![GitHub stars](https://img.shields.io/github/stars/codeoptima/codeoptima.svg?style=social)](https://github.com/codeoptima/codeoptima/stargazers)
 
 </div>
-
 ---
 
-## ✨ Features
+## Features
 
-### 🔍 Real-time Performance Analysis
+### Real-time Performance Analysis
 - **Instant feedback** as you type
 - **Nested loop detection** (O(n²) → O(n))
 - **N+1 query detection** for APIs
 - **Memory leak detection**
 
-### 🧪 Resource Simulation
+### Resource Simulation
 - Test code on **50MB RAM** limit
 - Simulate **10x slower CPU**
 - Add **500ms network latency**
 
-### 📊 Visual Dashboard
+### Visual Dashboard
 - Performance scores over time
 - Flame charts for CPU profiles
 - Memory timeline visualization
 
-### 🌍 Multi-language
+### Multi-language
 - ✅ Python (static + runtime profiling)
 - ✅ Java (JDT + JMH)
 - ✅ JavaScript/TypeScript (V8 inspector)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
