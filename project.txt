@@ -40,6 +40,55 @@ codeoptima/
     ├── docker/
     └── src/
 
+## New Project Structure
+
+codeoptima
+├── CONTRIBUTING.md
+├── LICENSE.md
+├── README.md
+├── backend
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   └── src
+├── package.json
+├── packages
+│   ├── core-wasm
+│   │   ├── Cargo.toml
+│   │   ├── package.json
+│   │   └── src
+│   ├── extension
+│   │   ├── package.json
+│   │   ├── scripts
+│   │   │   └── build-prod.sh
+│   │   └── src
+│   ├── language-java
+│   │   ├── package.json
+│   │   └── src
+│   ├── language-python
+│   │   ├── package.json
+│   │   └── src
+│   ├── shared-types
+│   │   ├── package.json
+│   │   └── src
+│   │       └── index.ts
+│   └── webview-ui
+│       ├── package.json
+│       └── src
+├── patches
+│   └── vscode-languageclient+9.0.1.patch
+├── pnpm-workspace.yaml
+├── project.txt
+├── scripts
+│   ├── bechmark.ts
+│   └── setup-dev.sh
+├── simulator
+│   ├── docker
+│   ├── package.json
+│   └── src
+└── turbo.json
+
+22 directories, 23 files
 
 # Basic commands
 pnpm install                 # Install all dependencies
