@@ -11,7 +11,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/SilasHakuzwimana/codeoptima?style=for-the-badge&logo=github&logoColor=white&label=⭐%20Stars&color=yellow)](https://github.com/SilasHakuzwimana/codeoptima/stargazers)
 
 </div>
----
 
 ## Features
 
